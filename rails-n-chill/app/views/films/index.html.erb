@@ -1,0 +1,13 @@
+        <div class = 'main-index'>
+        <h1 class="cover-heading">Full fun or full refund.</h1>
+        <p class="lead">Entertainment guaranteed. If you don't end up chilling, cancel within 7 days and we'll pay you back.</p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
+
+<% @films.each do |f| %>
+    <h3> <%= @film.title %> </h3>
+    <%= @film.synopsis %>
+<% end %>
+
+</div>

@@ -1,0 +1,12 @@
+<h1>Add New Show</h1>
+<%= form_for :film, url: films_path do |f| %>
+    <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    </p>
+    <p>
+    <%= f.label :synopsis %>
+    <%= f.text_area :synopsis %>
+    </p>
+    <%= f.submit %>
+<% end %>
